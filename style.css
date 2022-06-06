@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+/*==========================Variaveis cor=============================*/
+:root {
+    --cor1: #cfcfcf;
+    --cor2: #FAFAFA;
+    --cor3: #f8ebeb;
+    --cor4: #8e8e8e;
+    --colorFace: #385185;
+    --colorFaceLight: #385185;
+    --button: #B2DFFC;
+    --buttonHover: #0095F6;
+
+
+}
+
+/*=====================================================================*/
+
+body {
+    background-color: var(--cor2);
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.instagram-container {
+    position: relative;
+    top: -80px;
+    right: 70px;
+}
+
+main,
+.instagram-container {
+    display: flex;
+}
+
+
+.instagram-continue {
+    margin: 30px;
+    border: 1px solid var(--cor1);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    background-color: white;
+    padding: 30px;
+
+}
+
+.form {
+    width: 100%;
+    text-align: center;
+}
+
+.input {
+    width: 100%;
+    margin-top: 15px;
+    border: 1px solid var(--cor3);
+    background-color: var(--cor2);
+    padding: 9px 0 7px 8px;
+    text-overflow: ellipsis;
+}
+
+.button input {
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: var(--button);
+    width: 100%;
+    text-align: center;
+    border: none;
+    color: white;
+    padding: 8px;
+    transition: .2s;
+}
+
+.imgFace {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    position: relative;
+    top: 3px;
+
+}
+
+.button input:hover {
+    background-color: var(--buttonHover);
+}
+
+.separator {
+    margin: 20px;
+    color: var(--cor4);
+    font-size: 13px;
+}
+
+.facebook {
+    margin: 20px;
+    text-decoration: none;
+    color: var(--colorFace);
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.senha {
+    color: var(--colorFaceLight);
+    text-decoration: none;
+    margin-top: 20px;
+    display: block;
+}
+
+.signup {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 30px;
+    border: 1px solid var(--cor1);
+    max-width: 350px;
+}
+
+.app {
+    text-align: center;
+
+}
+
+footer {
+    position: relative;
+    top: -100px;
+    color: var(--cor4);
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.links {
+    margin-bottom: 0.625rem;
+
+}
+
+footer a {
+    color: var(--cor4);
+    display: inline-block;
+    margin: 0 0.375rem 0.625rem;
+    text-decoration: none;
+}
+
+@media(max-width:900px) {
+    .sectionPhone {
+        display: none;
+    }
+
+    .instagram-container {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+}
